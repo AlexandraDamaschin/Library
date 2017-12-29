@@ -15,7 +15,7 @@ namespace Library.Models
         [Display(Name = "Loan ID")]
         public int LoanId { get; set; }
 
-        [ForeignKey("associatedCategory")]
+        [ForeignKey("associatedMember")]
         public int MemberId { get; set; }
 
         [ForeignKey("associatedBook")]

@@ -1,0 +1,7 @@
+﻿First 
+enable migrations for a certain context in a certain folder
+Enable-Migrations -ContextTypeName Library.Models.ApplicationDbContext -MigrationsDirectory ApplicationUsersMigrations
+Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDirectory LibraryMigrations
+
+Second 
+Add migrations
