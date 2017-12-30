@@ -5,3 +5,8 @@ Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDire
 
 Second 
 Add migrations
+for the main migration
+add-Migration -ConfigurationTypeName Rad301ClubsV1.Migrations.Configuration
+
+for a certain migration
+add-migration -ConfigurationTypeName Rad301ClubsV1.Migrations.ClubModelMigrations.Configuration
