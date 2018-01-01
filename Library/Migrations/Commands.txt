@@ -1,12 +1,12 @@
 ﻿First 
 enable migrations for a certain context in a certain folder
-Enable-Migrations -ContextTypeName Library.Models.ApplicationDbContext -MigrationsDirectory ApplicationUsersMigrations
-Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDirectory LibraryMigrations
+Enable-Migrations -ContextTypeName Library.Models.ApplicationDbContext -MigrationsDirectory Migrations/ApplicationUsersMigrations
+Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDirectory Migrations/LibraryMigrations
 
 Second 
 Add migrations
 for the main migration
-add-Migration -ConfigurationTypeName Rad301ClubsV1.Migrations.Configuration
+add-Migration -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
 
 for a certain migration
 add-migration -ConfigurationTypeName Rad301ClubsV1.Migrations.ClubModelMigrations.Configuration
