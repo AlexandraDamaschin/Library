@@ -166,6 +166,10 @@
     <Compile Include="ApplicationUsersMigrations\201801011902162_FirstMigration.Designer.cs">
       <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibraryMigrations\201801011907530_InitialMigration.cs" />
+    <Compile Include="LibraryMigrations\201801011907530_InitialMigration.Designer.cs">
+      <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\LibraryMigrations\Configuration.cs" />
     <Compile Include="Migrations\ApplicationUsersMigrations\Configuration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -260,6 +264,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ApplicationUsersMigrations\201801011902162_FirstMigration.resx">
       <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryMigrations\201801011907530_InitialMigration.resx">
+      <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

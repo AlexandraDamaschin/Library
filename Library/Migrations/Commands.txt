@@ -1,10 +1,13 @@
-﻿First 
+﻿--------------------------------------------------------------------------------------------------------------------------------
+First 
 enable migrations for a certain context in a certain folder
 Enable-Migrations -ContextTypeName Library.Models.ApplicationDbContext -MigrationsDirectory Migrations/ApplicationUsersMigrations
 Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDirectory Migrations/LibraryMigrations
 
+--------------------------------------------------------------------------------------------------------------------------------
 Second 
 Add migrations
+
 for the main migration
 add-Migration -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
 update-database -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
@@ -12,3 +15,5 @@ update-database -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrat
 for a certain migration
 add-Migration -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
 update-database -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
+
+--------------------------------------------------------------------------------------------------------------------------------
