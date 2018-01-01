@@ -10,4 +10,5 @@ add-Migration -ConfigurationTypeName Library.Migrations.ApplicationUsersMigratio
 update-database -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
 
 for a certain migration
-add-migration -ConfigurationTypeName Rad301ClubsV1.Migrations.ClubModelMigrations.Configuration
+add-Migration -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
+update-database -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
