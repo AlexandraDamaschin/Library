@@ -162,6 +162,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationUsersMigrations\201801011902162_FirstMigration.cs" />
+    <Compile Include="ApplicationUsersMigrations\201801011902162_FirstMigration.Designer.cs">
+      <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\LibraryMigrations\Configuration.cs" />
     <Compile Include="Migrations\ApplicationUsersMigrations\Configuration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -252,6 +256,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApplicationUsersMigrations\201801011902162_FirstMigration.resx">
+      <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,4 +1,4 @@
-namespace Library.ApplicationUsersMigrations
+namespace Library.Migrations.ApplicationUsersMigrations
 {
     using System;
     using System.Data.Entity;

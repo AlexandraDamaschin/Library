@@ -1,4 +1,4 @@
-namespace Library.LibraryMigrations
+namespace Library.Migrations.LibraryMigrations
 {
     using System;
     using System.Data.Entity;
