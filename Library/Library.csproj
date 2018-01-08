@@ -170,6 +170,10 @@
     <Compile Include="LibraryMigrations\201801011907530_InitialMigration.Designer.cs">
       <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="LibraryMigrations\201801081427043_LoanDateAdded.cs" />
+    <Compile Include="LibraryMigrations\201801081427043_LoanDateAdded.Designer.cs">
+      <DependentUpon>201801081427043_LoanDateAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\LibraryMigrations\Configuration.cs" />
     <Compile Include="Migrations\ApplicationUsersMigrations\Configuration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -267,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibraryMigrations\201801011907530_InitialMigration.resx">
       <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryMigrations\201801081427043_LoanDateAdded.resx">
+      <DependentUpon>201801081427043_LoanDateAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

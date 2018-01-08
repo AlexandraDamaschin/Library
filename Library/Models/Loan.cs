@@ -21,6 +21,10 @@ namespace Library.Models
         [ForeignKey("associatedBook")]
         public int BookId { get; set; }
 
+        [Column(TypeName = "date")]
+        [Display(Name = "Loan Date")]
+        public DateTime? LoanDate { get; set; }
+
         public virtual Member associatedMember { get; set; }
 
         public virtual Book associatedBook { get; set; }
