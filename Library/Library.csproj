@@ -166,12 +166,12 @@
     <Compile Include="ApplicationUsersMigrations\201801011902162_FirstMigration.Designer.cs">
       <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="LibraryMigrations\201801011907530_InitialMigration.cs" />
-    <Compile Include="LibraryMigrations\201801011907530_InitialMigration.Designer.cs">
+    <Compile Include="Migrations\LibraryMigrations\201801011907530_InitialMigration.cs" />
+    <Compile Include="Migrations\LibraryMigrations\201801011907530_InitialMigration.Designer.cs">
       <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="LibraryMigrations\201801081427043_LoanDateAdded.cs" />
-    <Compile Include="LibraryMigrations\201801081427043_LoanDateAdded.Designer.cs">
+    <Compile Include="Migrations\LibraryMigrations\201801081427043_LoanDateAdded.cs" />
+    <Compile Include="Migrations\LibraryMigrations\201801081427043_LoanDateAdded.Designer.cs">
       <DependentUpon>201801081427043_LoanDateAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\LibraryMigrations\Configuration.cs" />
@@ -187,7 +187,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\LibraryMigrations\LibraryDbContext.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -257,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="LibraryMigrations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -270,10 +270,10 @@
     <EmbeddedResource Include="ApplicationUsersMigrations\201801011902162_FirstMigration.resx">
       <DependentUpon>201801011902162_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LibraryMigrations\201801011907530_InitialMigration.resx">
+    <EmbeddedResource Include="Migrations\LibraryMigrations\201801011907530_InitialMigration.resx">
       <DependentUpon>201801011907530_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LibraryMigrations\201801081427043_LoanDateAdded.resx">
+    <EmbeddedResource Include="Migrations\LibraryMigrations\201801081427043_LoanDateAdded.resx">
       <DependentUpon>201801081427043_LoanDateAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

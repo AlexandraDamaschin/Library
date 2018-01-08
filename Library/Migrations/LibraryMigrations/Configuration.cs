@@ -1,5 +1,6 @@
 namespace Library.Migrations.LibraryMigrations
 {
+    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -27,6 +28,25 @@ namespace Library.Migrations.LibraryMigrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            SeedMembers(context);
         }
+
+        private void SeedMembers(LibraryContext c)
+        {
+            c.Members.AddOrUpdate(u => u.MemberId, new Member
+            {
+                FirstName = "John",
+                SecondName = "Smith",
+                DateJoined = DateTime.Now
+            });
+
+            c.Members.AddOrUpdate(u => u.MemberId, new Member
+            {
+                FirstName = "Jimmy",
+                SecondName = "Johnson",
+                DateJoined = DateTime.Now
+            });
+        }
+
     }
 }
