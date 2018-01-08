@@ -28,9 +28,11 @@ namespace Library.Migrations.LibraryMigrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            SeedMembers(context);
+            //SeedMembers(context);
+            SeedBooks(context);
         }
 
+        //seedMembers
         private void SeedMembers(LibraryContext c)
         {
             c.Members.AddOrUpdate(u => u.MemberId, new Member
@@ -45,6 +47,31 @@ namespace Library.Migrations.LibraryMigrations
                 FirstName = "Jimmy",
                 SecondName = "Johnson",
                 DateJoined = DateTime.Now
+            });
+        }
+
+        //seedBooks
+        private void SeedBooks(LibraryContext c)
+        {
+            c.Books.AddOrUpdate(u => u.BookId, new Book
+            {
+                Author = "Phil Knight",
+                ISBN = "123456",
+                Title = "Shoe Dog"
+            });
+
+            c.Books.AddOrUpdate(u => u.BookId, new Book
+            {
+                Author = "James Smith",
+                ISBN = "123432",
+                Title = "Titanic"
+            });
+
+            c.Books.AddOrUpdate(u => u.BookId, new Book
+            {
+                Author = "Jack Bloggs",
+                ISBN = "123333",
+                Title = "Awesome Book"
             });
         }
 
