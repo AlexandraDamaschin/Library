@@ -6,7 +6,7 @@ Enable-Migrations -ContextTypeName Library.Models.LibraryContext -MigrationsDire
 
 --------------------------------------------------------------------------------------------------------------------------------
 Second 
-Add migrations
+Add migrations and update database
 
 for the main migration
 add-Migration -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
