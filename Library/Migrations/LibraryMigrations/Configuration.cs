@@ -28,8 +28,10 @@ namespace Library.Migrations.LibraryMigrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            //seeding methods
             //SeedMembers(context);
-            SeedBooks(context);
+            // SeedBooks(context);
+            SeedLoanBooks(context);
         }
 
         //seedMembers
@@ -73,6 +75,17 @@ namespace Library.Migrations.LibraryMigrations
                 ISBN = "123333",
                 Title = "Awesome Book"
             });
+        }
+
+        // loan book to one of the members
+        private void SeedLoanBooks(LibraryContext context)
+        {
+            context.Loans.AddOrUpdate(p => p.LoanId,
+                new Loan[] {
+                    new Loan { MemberId=1,
+                               BookId = 2, 
+                               LoanDate = DateTime.Now  }
+                                });
         }
 
     }

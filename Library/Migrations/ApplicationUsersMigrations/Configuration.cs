@@ -57,6 +57,7 @@ namespace Library.Migrations.ApplicationUsersMigrations
                 Email = "blogs.joe@itsligo.ie",
                 PasswordHash = new PasswordHasher().HashPassword("ITSligo$2")
             });
+            context.SaveChanges();
 
             //asign roles to users
             ApplicationUser librarian = manager.FindByEmail("einstein.albert@itsligo.ie");
@@ -78,6 +79,7 @@ namespace Library.Migrations.ApplicationUsersMigrations
             {
                 throw new Exception { Source = "Did not find user" };
             }
+            context.SaveChanges();
         }
     }
 }
