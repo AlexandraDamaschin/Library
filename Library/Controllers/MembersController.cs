@@ -10,6 +10,8 @@ using Library.Models;
 
 namespace Library.Controllers
 {
+    [Authorize(Roles = "Librarian")]
+
     public class MembersController : Controller
     {
         private LibraryContext db = new LibraryContext();

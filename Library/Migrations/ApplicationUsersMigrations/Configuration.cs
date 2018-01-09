@@ -1,5 +1,6 @@
 namespace Library.Migrations.ApplicationUsersMigrations
 {
+    using Microsoft.Ajax.Utilities;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using Models;
@@ -79,7 +80,6 @@ namespace Library.Migrations.ApplicationUsersMigrations
             {
                 throw new Exception { Source = "Did not find user" };
             }
-            context.SaveChanges();
         }
     }
 }

@@ -31,20 +31,20 @@ namespace Library.Migrations.LibraryMigrations
             //seeding methods
             //SeedMembers(context);
             // SeedBooks(context);
-            SeedLoanBooks(context);
+           // SeedLoanBooks(context);
         }
 
         //seedMembers
-        private void SeedMembers(LibraryContext c)
+        private void SeedMembers(LibraryContext context)
         {
-            c.Members.AddOrUpdate(u => u.MemberId, new Member
+            context.Members.AddOrUpdate(u => u.MemberId, new Member
             {
                 FirstName = "John",
                 SecondName = "Smith",
                 DateJoined = DateTime.Now
             });
 
-            c.Members.AddOrUpdate(u => u.MemberId, new Member
+            context.Members.AddOrUpdate(u => u.MemberId, new Member
             {
                 FirstName = "Jimmy",
                 SecondName = "Johnson",
@@ -53,23 +53,23 @@ namespace Library.Migrations.LibraryMigrations
         }
 
         //seedBooks
-        private void SeedBooks(LibraryContext c)
+        private void SeedBooks(LibraryContext context)
         {
-            c.Books.AddOrUpdate(u => u.BookId, new Book
+            context.Books.AddOrUpdate(u => u.BookId, new Book
             {
                 Author = "Phil Knight",
                 ISBN = "123456",
                 Title = "Shoe Dog"
             });
 
-            c.Books.AddOrUpdate(u => u.BookId, new Book
+            context.Books.AddOrUpdate(u => u.BookId, new Book
             {
                 Author = "James Smith",
                 ISBN = "123432",
                 Title = "Titanic"
             });
 
-            c.Books.AddOrUpdate(u => u.BookId, new Book
+            context.Books.AddOrUpdate(u => u.BookId, new Book
             {
                 Author = "Jack Bloggs",
                 ISBN = "123333",
